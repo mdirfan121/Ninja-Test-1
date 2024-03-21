@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#addBtn {
+  padding: 10px 18px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#todoList{
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.checkbox {
+  position: absolute;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.checkbox input:checked + label {
+  background-color: #4CAF50;
+}
+
+.delete-btn{
+  margin-left: 320px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.todo-text {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.checked .todo-text {
+  text-decoration: line-through;
+}
+
+#status ul{
+   display: flex;
+   justify-content: flex-end;
+
+}
+#status ul li{
+  padding: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
